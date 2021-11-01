@@ -13,7 +13,7 @@ import { Container } from './styles';
 
 type InputProps = {
   name: string;
-  icon: FunctionComponent<{ size: number }>;
+  icon?: FunctionComponent<{ size: number }>;
 } & ComponentPropsWithoutRef<'input'>;
 
 const Input = ({ name, icon: Icon, ...rest }: InputProps) => {
